@@ -1,0 +1,12 @@
+platform :ios, '14.0'
+
+target 'SFVehicles' do
+  use_frameworks!
+
+  pod 'GeoFire', :path => '../../'
+
+  target 'SFVehiclesTests' do
+    inherit! :search_paths
+  end
+
+end
